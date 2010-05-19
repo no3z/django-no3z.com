@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}no3z{% endblock %}
+
+{% block content %}
+<table width="930" border ="0" align="center">
+<tr> <td colspan="2"> </td>
+</tr><tr>
+<td class="feed_title" width="300">Enlaces finos:</td>
+</tr>
+
+<tr>
+  <td width="300" valign="top">
+    {% if all %}
+    <ul>{% for item in all %}
+    {% ifequal forloop.counter 16 %}</ul></td><td width="300" valign="top"><ul>{% endifequal %}
+      <li>
+	<a id="images{{ forloop.counter }}" href={{ item.link }} name="{{ item.image }}" description="{{ item.description }}" type="{{ item.music }}" title="{{ item.author }}"> {{ item.title }}    </a><br>
+      </li>
+      {% if forloop.last %}
+      <images_count id="images_count">{{ forloop.counter }}</images_count>
+      {% endif %}
+      {% endfor %}
+      {% endif %}</ul>
+  </td>
+</tr>
+</tbody>
+</table>
+
+{% endblock %}
+
