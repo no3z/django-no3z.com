@@ -1,0 +1,5 @@
+filebrowser contains filebrowser extension for django. 
+
+Download from internet and copy.
+
+media files should go on media directory.
