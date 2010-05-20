@@ -1,0 +1,22 @@
+django-no3z.com - django code for no3z.com website
+Django proof-of-concept site. w/ HTML5
+
+INSTALL: 
+Change dir to no3z_www.
+Download and install django-filebrowser.
+This page has info on how to install django-filebrowser: 
+http://code.google.com/p/django-filebrowser/wiki/installationbasic
+
+Change settings.py accordingly.
+
+FIRST RUN : 
+python manage.py syncdb
+python manage.py shell
+ on shell >> import create
+	  >> create.get_context()
+	  >> exit()
+
+python manage.py runserver
+
+And server should be running in 127.0.0.1:8000 
+
