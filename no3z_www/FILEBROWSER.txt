@@ -3,3 +3,5 @@ filebrowser contains filebrowser extension for django.
 Download from internet and copy.
 
 media files should go on media directory.
+
+this page has info on how to install django-filebrowser: http://code.google.com/p/django-filebrowser/wiki/installationbasic
